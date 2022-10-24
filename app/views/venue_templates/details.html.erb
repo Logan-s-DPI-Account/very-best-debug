@@ -39,7 +39,7 @@
 
   <dt>Delete venue</dt>
   <dd>
-    <a href="/delete_venue/<% @the_venue.id %>">
+    <a href="/delete_venue/<%= @the_venue.id %>">
       Delete this venue
     </a>
   </dd>
@@ -79,7 +79,7 @@
   <input id="browser_venue_id" type="text" value="<%= @the_venue.id %>" name="query_venue_id">
 
   <label for="browser_author_id">Author ID</label>
-  <input id="browser_author_id" type="text" name="query_author_id">
+  <input id="browser_author_id" name="query_author_id">
 
   <label for="browser_comment">Comment</label>
   <textarea id="browser_comment" name="query_body" placeholder="Enter a comment..."></textarea>
